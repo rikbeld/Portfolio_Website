@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+}
+
+a img {
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+}
+
+a img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.social-btn a {
+  text-decoration: none;
+}
