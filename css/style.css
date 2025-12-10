@@ -1,12 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0d1117, #000);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 a img {
   width: 40px;
   height: 40px;
   border: none;
-  text-decoration: none;
 }
 
 a img:hover {
@@ -14,6 +30,168 @@ a img:hover {
   cursor: pointer;
 }
 
-.social-btn a {
-  text-decoration: none;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 50px;
+  padding: 0.8rem 1.6rem;
+  background: rgba(13, 17, 23, 0.6);
+  backdrop-filter: blur(10px);  
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+  padding: 1px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  transform: scale(1.1); 
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2.5px solid rgba(255, 255, 255, 0.9);
+    margin-right: 10px;
+
+    transition: 
+    transform 5s ease,
+}
+
+.profile:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.canada {
+  width: 40px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.experience-education {
+  color: #fff;
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: left;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem 0;
+  border: none;
+  background: transparent;
+  color: #ccc;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background: #fff;
+  color: #000;
+}
+
+.timeline {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    position: relative;
+    padding-left: 0px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background: white
+}
+
+.entry {
+    position: relative;
+    padding-left: 65px;
+    padding-bottom: 1.5rem;
+}
+
+.entry::before {
+    content: none !important;
+}
+
+.company-logo {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.entry::after {
+    content: none !important;
+}
+
+.entry h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.entry .role {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.entry .date {
+  color: #8e38b1;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
 }

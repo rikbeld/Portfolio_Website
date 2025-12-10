@@ -2,31 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tarik Beldjehem Portfolio</title>
+    <title>Tarik Beldjehem</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/initials.svg">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="assets/resume.pdf" target=”_blank”>Resume</a></li>
                 <li><a href="/projects.html">Projects</a></li>
             </ul>
+            <span class="slider"></span>
         </nav>
     </header>
     <main>
+        <br><br><br><br>
         <section class="intro">
-            <h1>Tarik Beldjehem</h1>
-            <p>Software Developer</p>
+            <h1><img src="assets/profile.svg" alt="Profile" class="profile">Tarik Beldjehem</h1>
+            <p>Software Developer based in Ottawa <img src="assets/canada_icon.svg" alt="Canada" class="canada"></p>
         </section>
         <section class="social">
-        <a href="https://github.com/rikbeld" class="social-btn" target="_blank" aria-label="GitHub">
-            <img src="assets/github_icon.svg" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/tarikbeldjehem/" class="social-btn" target="_blank" aria-label="LinkedIn">
-            <img src="assets/linkedin_icon.svg" alt="LinkedIn">
-        </a>
+            <a href="https://github.com/rikbeld" class="social-btn" target="_blank" aria-label="GitHub">
+                <img src="assets/github_icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/tarikbeldjehem/" class="social-btn" target="_blank" aria-label="LinkedIn">
+                <img src="assets/linkedin_icon.svg" alt="LinkedIn">
+            </a>
+        <br><br><br><br>
+        </section>
+        <section class="experience-education">
+            <h2>Experience</h2>
+            <div class="tab-container">
+                <button class="tab active" data-target="work">Experience</button>
+                <button class="tab" data-target="studies">Education</button>
+            </div>
+            <div class="tab-content active" id="work">
+                <div class="timeline">
+                    <div class="entry">
+                        <img class="company-logo" src="assets/ross_video.svg" alt="Ross Video">
+                        <p class="date">May 2024 – August 2024</p>
+                        <h3>Software Developer</h3>
+                        <p class="role">Ross Video</p>
+                        <p class="desc">Backend development of routing software using C++ & Go.</p>
+                    </div>
+
+                    <div class="entry">
+                        <img class="company-logo" src="assets/ross_video.svg" alt="Ross Video">
+                        <p class="date">September 2023 – December 2023</p>
+                        <h3>Test Automation Developer</h3>
+                        <p class="role">Ross Video</p>
+                        <p class="desc">Wrote test scripts for an automation framework in Python.</p>
+                    </div>
+
+                    <div class="entry">
+                        <img class="company-logo" src="assets/ised.svg" alt="ISED">
+                        <p class="date">January 2023 – August 2023</p>
+                        <h3>R&D Trainee in Advanced Telecom Systems</h3>
+                        <p class="role">CRC - ISED Canada</p>
+                        <p class="desc">Contributed to a Data Science government project while using SQL.</p>
+                    </div>
+
+                    <div class="entry">
+                        <img class="company-logo" src="assets/digitera.svg" alt="Digitera">
+                        <p class="date">July 2018</p>
+                        <h3>Full Stack Developer</h3>
+                        <p class="role">Digitera Interactive</p>
+                        <p class="desc">Modified an admin website with HTML, CSS & JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="studies">
+                <div class="timeline">
+                    <div class="entry">
+                        <img class="company-logo" src="assets/carleton.svg" alt="Carleton">
+                        <h3>Bachelor of Software Engineering</h3>
+                        <p class="role">Carleton University</p>
+                        <p class="date">Sep 2020 – Dec 2025</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
