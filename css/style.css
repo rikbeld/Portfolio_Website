@@ -78,13 +78,6 @@ nav ul {
     vertical-align: middle;
     border: 2.5px solid rgba(255, 255, 255, 0.9);
     margin-right: 10px;
-
-    transition: 
-    transform 5s ease,
-}
-
-.profile:hover {
-    transform: rotate(10deg) scale(1.1);
 }
 
 .canada {
